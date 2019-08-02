@@ -1,4 +1,5 @@
-require 'google_places/review'
+require File.join(File.dirname(__FILE__), 'review')
+
 module GooglePlaces
   class Spot
     attr_accessor :lat, :lng, :viewport, :name, :icon, :reference, :vicinity, :types, :id, :formatted_phone_number,
